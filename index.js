@@ -33,6 +33,10 @@ http.createServer(function (req, res) {
           color: #334155;
           margin-top: 25px;
         }
+        h3 {
+          color: #1e3a8a;
+          margin-top: 15px;
+        }
         p, li {
           line-height: 1.6;
         }
@@ -40,11 +44,30 @@ http.createServer(function (req, res) {
           list-style: disc;
           margin-left: 20px;
         }
+        .project {
+          margin-bottom: 20px;
+          padding: 15px;
+          border-left: 4px solid #1e3a8a;
+          background-color: #f9fafb;
+          border-radius: 8px;
+        }
+        .project-title {
+          font-weight: bold;
+          font-size: 17px;
+          color: #1e3a8a;
+        }
         footer {
           text-align: center;
           margin-top: 40px;
           color: #777;
           font-size: 14px;
+        }
+        a {
+          color: #1e3a8a;
+          text-decoration: none;
+        }
+        a:hover {
+          text-decoration: underline;
         }
       </style>
     </head>
@@ -104,6 +127,53 @@ http.createServer(function (req, res) {
           <li>Rescued and shared over 1000 food items, preventing landfill waste.</li>
           <li>Raised sustainability awareness by engaging with residents and app users.</li>
         </ul>
+
+        <!-- 🧠 NEW SECTION: Relevant Projects -->
+        <h2>Relevant Projects</h2>
+
+        <div class="project">
+          <div class="project-title">Chatbot Application (Python)</div>
+          <p>Developed an intelligent chatbot using <strong>Python</strong> and libraries such as <em>NLTK</em> and <em>TensorFlow</em>. 
+          The chatbot processes natural language inputs, classifies intents, and provides context-aware responses. 
+          Designed a modular structure allowing easy integration with messaging platforms and REST APIs.</p>
+        </div>
+
+        <div class="project">
+          <div class="project-title">Super Mario-Inspired 2D Platformer</div>
+          <p>Created a fully functional 2D game using <strong>JavaScript</strong> and <strong>HTML5 Canvas</strong>. 
+          Implemented physics-based mechanics, collision detection, and animated sprites. 
+          Players navigate through levels collecting coins and avoiding obstacles — inspired by retro-style game design.</p>
+        </div>
+
+        <div class="project">
+          <div class="project-title">Interactive Drawing App (JavaScript)</div>
+          <p>Built a browser-based drawing application featuring dynamic brush sizes, color pickers, eraser tools, and save/export functionality. 
+          Developed with <strong>HTML, CSS, and JavaScript</strong> using the Canvas API for responsive, real-time rendering.</p>
+        </div>
+
+        <div class="project">
+          <div class="project-title">Networking Layer Simulations (Jupyter Notebook)</div>
+          <p>Designed and implemented multiple networking layer projects to demonstrate data transmission concepts and protocol behavior:</p>
+          <ul>
+            <li><strong>Network Access Layer:</strong> Error detection, framing, and data encapsulation mechanisms.</li>
+            <li><strong>Internet Layer:</strong> IP routing, addressing, and fragmentation demonstrations.</li>
+            <li><strong>Transport Layer (Parts 1 & 2):</strong> TCP/UDP flow control, connection setup, and congestion management simulations.</li>
+            <li><strong>Application Layer in Networks:</strong> Built simple client-server communication models with socket programming.</li>
+          </ul>
+        </div>
+
+        <div class="project">
+          <div class="project-title">Fitness Tracking Website</div>
+          <p>Developed a responsive web application using <strong>Flask</strong> (Python), <strong>HTML, CSS, and JavaScript</strong> for fitness goal tracking. 
+          Integrated user authentication, progress dashboards, and exercise logging features with a clean and intuitive interface.</p>
+        </div>
+
+        <div class="project">
+          <div class="project-title">Additional Projects</div>
+          <p>Explored a wide range of academic and personal coding projects across <em>AI, web development, and systems programming</em>. 
+          Many of these are publicly available on my <a href="https://github.com/presiyan21" target="_blank">GitHub profile</a>.</p>
+        </div>
+        <!-- END NEW SECTION -->
 
         <footer>
           &copy; 2025 Presiyan Draganov | My Personal Web Page
